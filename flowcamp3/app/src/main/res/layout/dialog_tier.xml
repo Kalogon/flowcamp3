@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10sp"
+        android:id="@+id/title"
+        android:text="상세 정보"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp"
+        android:id="@+id/kda"
+        android:text="KDA: "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kda"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp"
+        android:id="@+id/deal"
+        android:text="딜량: "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deal"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp"
+        android:id="@+id/dealtaken"
+        android:text="받은 딜량: "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dealtaken"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp"
+        android:id="@+id/heal"
+        android:text="힐량: "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heal"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp"
+        android:id="@+id/vision"
+        android:text="시야 점수: "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vision"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp"
+        android:id="@+id/gold"
+        android:text="골드: "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gold"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp"
+        android:id="@+id/turret"
+        android:text="포탑: "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/turret"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp"
+        android:id="@+id/cs"
+        android:text="CS: "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cs"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp"
+        android:id="@+id/level"
+        android:text="레벨: "/>
+
+</RelativeLayout>

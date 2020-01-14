@@ -83,17 +83,15 @@ public class OpenRiotAPITask extends AsyncTask<String, Void, String> {
         String lane = client.getLane(matchId, champId);
         String role = client.getRole(matchId, champId);
 
-        String ret = Integer.toString(kill)
-                +" " + Integer.toString(death)
-                +" " + Integer.toString(assists)
-                +" " + Double.toString(Deal * gameDuration / 60)
-                +" " + Double.toString(DealTaken * gameDuration / 60)
-                +" " + Double.toString(Heal * gameDuration / 60)
-                +" " + Double.toString(visionScore * gameDuration / 60)
-                +" " + Double.toString(gold * gameDuration / 60)
-                +" " + Double.toString(turret * gameDuration / 60)
-                +" " + Double.toString(cs * gameDuration / 60)
-                +" " + Double.toString(championLevel * gameDuration / 60)
+        String ret = Double.toString(kda)
+                +" " + Double.toString(Deal)
+                +" " + Double.toString(DealTaken)
+                +" " + Double.toString(Heal)
+                +" " + Double.toString(visionScore)
+                +" " + Double.toString(gold)
+                +" " + Double.toString(turret)
+                +" " + Double.toString(cs)
+                +" " + Double.toString(championLevel)
                 +" " + lane
                 +" " + role
                 +" " + Double.toString(gameDuration / 60);
