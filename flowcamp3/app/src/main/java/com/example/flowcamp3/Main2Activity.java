@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -130,6 +131,7 @@ public class Main2Activity extends AppCompatActivity {
         TextView top = findViewById(R.id.top);
         top.setText(username + "님은 최근 경기에서");
         ImageView tier_image = findViewById(R.id.tier);
+        RelativeLayout relativeLayout = findViewById(R.id.belowwrap);
         TextView below = findViewById(R.id.tiertext);
         TextView df = findViewById(R.id.text);
         Button detail = findViewById(R.id.details);

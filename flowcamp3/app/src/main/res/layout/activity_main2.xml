@@ -20,24 +20,28 @@
         android:layout_below="@+id/top"
         android:layout_marginTop="50sp"
         android:layout_centerHorizontal="true"/>
-    <TextView
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tiertext"
         android:layout_below="@+id/tier"
         android:layout_marginTop="50sp"
         android:layout_centerHorizontal="true"
-        android:textColor="#ff0000"
-        android:textStyle="bold"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/text"
-        android:layout_below="@+id/tier"
-        android:layout_marginTop="50sp"
-        android:layout_toRightOf="@+id/tiertext"
-        android:layout_centerHorizontal="true"
-        android:text="처럼 플레이하셨습니다"/>
+        android:id="@+id/belowwrap">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiertext"
+            android:layout_alignParentLeft="true"
+            android:textColor="#ff0000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:layout_toRightOf="@+id/tiertext"
+            android:text="처럼 플레이하셨습니다"/>
+    </RelativeLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
