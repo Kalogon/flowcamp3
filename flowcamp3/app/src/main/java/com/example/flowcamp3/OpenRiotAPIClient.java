@@ -14,7 +14,7 @@ import java.net.URL;
 
 public class OpenRiotAPIClient {
     final static String openRiotURL = "https://kr.api.riotgames.com";
-    final static String API_Key = "RGAPI-eaef0d4b-a43f-40c1-9aa7-0d988735d743";
+    final static String API_Key = "RGAPI-6bb3b1e4-4ed0-4960-8255-750e7fa8070f";
     public String getAccountId(String summonerName) {
         String ret = "";
         String urlString = openRiotURL + "/lol/summoner/v4/summoners/by-name/" + summonerName + "?api_key=" + API_Key;
