@@ -18,21 +18,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button button = (Button) findViewById(R.id.button1);
-        String str = "";
-        OpenRiotAPITask t = new OpenRiotAPITask();
-        try {
-            str = t.execute("hide on bush").get();
-            Log.e("client", str);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
+        final EditText editText = (EditText)findViewById(R.id.editText);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                EditText editText = (EditText)findViewById(R.id.editText);
                 Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
                 intent.putExtra("userid", editText.getText());
                 startActivity(intent);
